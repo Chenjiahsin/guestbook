@@ -1,0 +1,10 @@
+{% entends "base.html" %}
+
+{% block content %}
+<h1>姓名</h1>
+{{ message.user }}<BR>
+<h2>主旨</h2>
+{{ message.subject }}
+<h2>內容</h2>
+{{ message.comtent|linebreaks }}<BR>
+{% endblock %}
