@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<from action="" method="part">
+    {% csrf_token %}
+    <table>
+    {{ from.as_table }}
+    </table>
+    <input type="submit" value="登入">
+</from>
+{% endblock %}
